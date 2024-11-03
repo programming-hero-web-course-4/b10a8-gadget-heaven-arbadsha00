@@ -1,17 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { useEffect, useState } from "react";
 const Nav = () => {
+    const location = useLocation();
+    const [isHome, setIsHome] = useState(false);
+    useEffect(() => {
+       setIsHome(location.pathname === "/")
+    },[location])
+    
   return (
-    <div className="sticky top-0   z-50 bg-white/30 backdrop-blur-md">
-      <nav className="container mx-auto px-4 flex justify-between items-center my-6">
+    <div className={`sticky top-0 mt-2 md:mt-4   z-50  backdrop-blur-md ${isHome?"bg-primary text-white mx-2 md:mx-4  rounded-t-xl ":"bg-white/30"}`}>
+      <nav className="container mx-auto px-4 flex justify-between items-center py-4">
         <h1 className="text-xl font-bold">Gadget Heaven</h1>
         <ul className="hidden md:flex gap-6">
           <NavLink
             className={({ isActive }) =>
               `font-semibold  ${
-                isActive ? "text-primary underline" : "text-gray-600"
+                isActive ? ` underline ${isHome?"":"text-gray-600"}` : ""
               }`
             }
             to="/"
@@ -19,36 +26,36 @@ const Nav = () => {
             Home
           </NavLink>
           <NavLink
-            className={({ isActive }) =>
-              `font-semibold  ${
-                isActive ? "text-primary underline" : "text-gray-600"
-              }`
-            }
+             className={({ isActive }) =>
+                `font-semibold  ${
+                  isActive ? ` underline ${isHome?"":"text-primary"}` : ""
+                }`
+              }
             to="/statistics"
           >
             Statistics
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `font-semibold  ${
-                isActive ? "text-primary underline" : "text-gray-600"
-              }`
-            }
+                `font-semibold  ${
+                  isActive ? ` underline ${isHome?"":"text-primary"}` : ""
+                }`
+              }
             to="/dashboard"
           >
             Dashboard
           </NavLink>
         </ul>
-        <div className="flex items-center gap-3">
-          <button className="btn btn-circle btn-outline text-xl hover:bg-primary">
+        <div className="flex items-center gap-3 ">
+          <button className={`btn btn-circle btn-outline text-xl ${isHome?"text-white hover:bg-black":"hover:bg-primary  hover:text-white"}`}>
             <MdOutlineShoppingCart />
-                  </button>
-                  <button className="btn btn-circle btn-outline text-xl hover:bg-primary">
-                  <FaRegHeart />
+          </button>
+          <button className={`btn btn-circle btn-outline text-xl ${isHome?"text-white hover:bg-black":"hover:bg-primary hover:text-white"}`}>
+            <FaRegHeart  />
           </button>
           <div className="dropdown dropdown-bottom dropdown-end md:hidden">
             <div tabIndex={0} role="button" className="m-1">
-              <RiMenu3Fill className="text-xl hover:text-primary" />
+              <RiMenu3Fill className={isHome?"text-white hover:text-black text-xl":"hover:text-primary text-xl"} />
             </div>
             <ul
               tabIndex={0}
