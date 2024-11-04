@@ -11,9 +11,7 @@ html{
     font-family: "Sora", sans-serif;
     overflow: scroll;
 }
-.banner-img {
-    background-image: url("./assets/bg-shadow.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+
+body{
+    background-color: #f7f7f7;
+}

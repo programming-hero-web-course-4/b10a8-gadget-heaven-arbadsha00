@@ -16,7 +16,7 @@ const Banner = () => {
             Shop Now
           </button>
               </div>
-              <div className="mx-auto container w-4/5 md:w-3/4  p-2 bg-opacity-50 border-4 rounded-xl bg-white absolute   bottom-0 left-1/2 transform translate-x-[-50%] -translate-y-[-55%]">
+              <div className="mx-auto container w-4/5 md:w-3/4  p-2 bg-opacity-50 border-4  rounded-xl bg-white absolute   bottom-0 left-1/2 transform translate-x-[-50%] -translate-y-[-55%]">
         <img className="rounded-xl w-full" src={banner} alt="" />
       </div>
       </div>

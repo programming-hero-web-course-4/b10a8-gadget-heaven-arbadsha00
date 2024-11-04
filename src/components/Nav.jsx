@@ -11,7 +11,7 @@ const Nav = () => {
     },[location])
     
   return (
-    <div className={`sticky top-0 mt-2 md:mt-4   z-50  backdrop-blur-md ${isHome?"bg-primary text-white mx-2 md:mx-4  rounded-t-xl ":"bg-white/30"}`}>
+    <div className={` mt-2 md:mt-4    ${isHome?"bg-primary text-white mx-2 md:mx-4  rounded-t-xl ":"bg-white/30"}`}>
       <nav className="container mx-auto px-4 flex justify-between items-center py-4">
         <h1 className="text-xl font-bold">Gadget Heaven</h1>
         <ul className="hidden md:flex gap-6">
