@@ -4,7 +4,7 @@ import errorImg from "../assets/erreo.png";
 const Cards = () => {
   const { category } = useParams();
   const navigate = useNavigate();
-  console.log(category);
+
   const data = useLoaderData();
   const [categoryData, setCategoryData] = useState([]);
   useEffect(() => {
