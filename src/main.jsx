@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import Dashboard from "./components/Dashboard";
 import Cards from "./components/Cards";
+import Details from "./components/Details";
 
 const router = createBrowserRouter([
   {
@@ -36,8 +37,13 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
       {
-        path: "/Dashboard",
+        path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/details/:id",
+        element: <Details></Details>,
+        loader : ()=>fetch("../gadgets.json"),
       },
     ],
   },

@@ -47,7 +47,7 @@
             "ScreenPad Plus secondary display",
             "Up to 12 hours of battery life"
         ],
-        "availability": true,
+        "availability": false,
         "rating": 4.6
     },
     {
@@ -98,7 +98,7 @@
             "NVIDIA GeForce RTX 3060",
             "Customizable RGB keyboard"
         ],
-        "availability": true,
+        "availability": false,
         "rating": 4.6
     },
     {
@@ -150,7 +150,7 @@
             "Up to 18 hours battery life"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 5
     },
     {
         "product_id": "M002",
