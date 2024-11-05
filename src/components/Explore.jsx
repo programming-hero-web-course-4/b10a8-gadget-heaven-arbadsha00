@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Explore = () => {
   return (
+    
     <div className="bg-white p-4 rounded-xl space-y-4">
       <NavLink
         to="/category/all"

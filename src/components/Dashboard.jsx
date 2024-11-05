@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Gadget Heaven | Dashboard</title>
+        <title>Dashboard | Gadget Heaven</title>
         <link rel="canonical" href="https://www.tacobell.com/" />
       </Helmet>
       <div className="">

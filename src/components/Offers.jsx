@@ -3,10 +3,15 @@ import offer1 from "../assets/offer1.png";
 import offer2 from "../assets/offer2.png";
 import offer3 from "../assets/offer3.webp";
 import offer4 from "../assets/offer4.png";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 const Offers = () => {
     const navigate = useNavigate();
-  return (
-    <div className="container mx-auto px-4 my-10 text-center">
+    return (
+        <HelmetProvider>
+            <Helmet>
+        <title>Offers | Gadget Heaven</title>
+      </Helmet>
+            <div className="container mx-auto px-4 my-10 text-center">
       <div className="bg-white pt-10 rounded-xl">
         <h1 className="text-3xl md:text-4xl text-primary font-bold">
           Get The Best Deals
@@ -32,6 +37,8 @@ const Offers = () => {
         />
       </div>
     </div>
+        </HelmetProvider>
+    
   );
 };
 

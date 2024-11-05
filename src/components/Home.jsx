@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Gadget Heaven | Home</title>
+        <title>Gadget Heaven</title>
       </Helmet>
       <div className="pb-10">
         <Banner></Banner>

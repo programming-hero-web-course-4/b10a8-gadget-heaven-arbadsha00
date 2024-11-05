@@ -11,13 +11,14 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  Scatter,
 } from "recharts";
 const Statistics = () => {
   const data = useLoaderData();
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Gadget Heaven | Statistics</title>
+        <title>Statistics | Gadget Heaven</title>
       </Helmet>
       <div className="my-10 container mx-auto px-4">
         <h1 className="text-2xl font-semibold">Statistics</h1>
@@ -31,12 +32,13 @@ const Statistics = () => {
               <Tooltip />
               <Legend />
               <Area
-                baseValue={1}
+               type="monotone"
                 dataKey="price"
                 fill="#efe1fb"
                 stroke="#efe1fb"
               />
               <Bar barSize={30} dataKey="price" fill="#8884d8" />
+              
             </ComposedChart>
           </ResponsiveContainer>
         </div>
