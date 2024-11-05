@@ -11,6 +11,7 @@ import Cards from "./components/Cards";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Wishlist from "./components/Wishlist";
+import Offers from "./components/Offers";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
         path: "/statistics",
         element: <Statistics></Statistics>,
         loader : ()=>fetch("../gadgets.json"),
+      },
+      {
+        path: "/offers",
+        element: <Offers></Offers>
+        
       },
       {
         path: "/dashboard",

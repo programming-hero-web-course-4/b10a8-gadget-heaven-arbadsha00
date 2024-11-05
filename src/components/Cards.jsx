@@ -37,7 +37,7 @@ const Cards = () => {
         ))
       ) : (
         <div className="lg:col-span-3">
-          <img className=" md:h-[400px] object-cover w-full" src={errorImg} alt="" />
+          <img className=" md:w-[500px] object-cover " src={errorImg} alt="" />
         </div>
       )}
     </div>

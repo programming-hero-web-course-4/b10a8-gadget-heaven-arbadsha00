@@ -1,204 +1,204 @@
 [
-    {
-        "product_id": "L001",
-        "product_title": "Dell XPS 13",
-        "product_image": "https://i.ibb.co.com/1ZZL1YR/g-1.jpg",
-        "category": "Laptops",
-        "price": 1099,
-        "description": "High-performance laptop with a stunning InfinityEdge display.",
-        "specification": [
-            "13.4-inch FHD+ display",
-            "Intel Core i7 processor",
-            "16GB RAM, 512GB SSD storage",
-            "Up to 12 hours of battery life",
-            "Backlit keyboard"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "product_id": "L002",
-        "product_title": "HP Spectre x360",
-        "product_image": "https://i.ibb.co.com/J7Tpzpr/g-2.jpg",
-        "category": "Laptops",
-        "price": 1299,
-        "description": "Versatile 2-in-1 laptop with excellent performance and battery life.",
-        "specification": [
-            "13.5-inch 4K OLED display",
-            "Intel Core i7 processor",
-            "16GB RAM, 1TB SSD storage",
-            "360-degree hinge",
-            "Fingerprint reader"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "L003",
-        "product_title": "Asus ZenBook Duo",
-        "product_image": "https://i.ibb.co.com/wsQ71yZ/g-3.jpg",
-        "category": "Laptops",
-        "price": 1499,
-        "description": "Dual-screen laptop designed for multitasking and productivity.",
-        "specification": [
-            "14-inch FHD display",
-            "Intel Core i7 processor",
-            "16GB RAM, 1TB SSD storage",
-            "ScreenPad Plus secondary display",
-            "Up to 12 hours of battery life"
-        ],
-        "availability": false,
-        "rating": 4.6
-    },
-    {
-        "product_id": "L004",
-        "product_title": "Lenovo ThinkPad X1 Carbon",
-        "product_image": "https://i.ibb.co.com/jT42V5T/g-4.jpg",
-        "category": "Laptops",
-        "price": 1699,
-        "description": "Lightweight business laptop with superior security and performance.",
-        "specification": [
-            "14-inch FHD display",
-            "Intel Core i7 processor",
-            "16GB RAM, 512GB SSD storage",
-            "Fingerprint reader",
-            "MIL-STD 810G durability"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "L005",
-        "product_title": "Microsoft Surface Laptop 5",
-        "product_image": "https://i.ibb.co.com/JtfrGRx/g-5.webp",
-        "category": "Laptops",
-        "price": 1399,
-        "description": "Stylish and powerful laptop with touch support.",
-        "specification": [
-            "13.5-inch PixelSense touchscreen",
-            "Intel Core i7 processor",
-            "16GB RAM, 512GB SSD storage",
-            "Integrated graphics",
-            "Up to 17 hours of battery life"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "L006",
-        "product_title": "Acer Predator Helios 300",
-        "product_image": "https://i.ibb.co.com/tB7CdqC/g-6.webp",
-        "category": "Laptops",
-        "price": 1599,
-        "description": "Powerful gaming laptop with high-end graphics and cooling.",
-        "specification": [
-            "15.6-inch FHD display",
-            "Intel Core i7 processor",
-            "16GB RAM, 512GB SSD storage",
-            "NVIDIA GeForce RTX 3060",
-            "Customizable RGB keyboard"
-        ],
-        "availability": false,
-        "rating": 4.6
-    },
-    {
-        "product_id": "P001",
-        "product_title": "iPhone 15 Pro Max",
-        "product_image": "https://i.ibb.co.com/KxLbt2p/g-7.webp",
-        "category": "iPhone",
-        "price": 1299,
-        "description": "Ultimate smartphone experience with the latest technology.",
-        "specification": [
-            "6.7-inch Super Retina XDR display",
-            "A17 Bionic chip",
-            "Triple-camera system",
-            "LiDAR Scanner",
-            "Up to 2TB storage"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "P002",
-        "product_title": "Samsung Galaxy S23 Ultra",
-        "product_image": "https://i.ibb.co.com/0CyK1cD/g-8.jpg",
-        "category": "Phones",
-        "price": 1199,
-        "description": "High-end Android phone with powerful features and performance.",
-        "specification": [
-            "6.8-inch Dynamic AMOLED display",
-            "Snapdragon 8 Gen 2",
-            "Quad-camera system",
-            "S-Pen included",
-            "Up to 1TB storage"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "M001",
-        "product_title": "MacBook Air 13-inch",
-        "product_image": "https://i.ibb.co.com/MZf45Lw/g-9.jpg",
-        "category": "MacBook",
-        "price": 999,
-        "description": "Thin, light, and capable laptop for everyday tasks.",
-        "specification": [
-            "13.3-inch Retina display",
-            "Apple M1 chip",
-            "8GB RAM, 256GB SSD storage",
-            "Magic Keyboard",
-            "Up to 18 hours battery life"
-        ],
-        "availability": true,
-        "rating": 5
-    },
-    {
-        "product_id": "M002",
-        "product_title": "MacBook Pro 16-inch",
-        "product_image": "https://i.ibb.co.com/w0C34k0/g-10.jpg",
-        "category": "MacBook",
-        "price": 2499,
-        "description": "High-performance laptop for professionals.",
-        "specification": [
-            "16-inch Liquid Retina XDR display",
-            "Apple M1 Max chip",
-            "32GB RAM, 1TB SSD storage",
-            "Backlit Magic Keyboard",
-            "Up to 21 hours of battery life"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
-        "product_id": "A001",
-        "product_title": "AirPods Pro",
-        "product_image": "https://i.ibb.co.com/jzWKNVV/g-11.jpg",
-        "category": "Accessories",
-        "price": 249,
-        "description": "High-quality wireless earbuds with noise cancellation.",
-        "specification": [
-            "Active Noise Cancellation",
-            "Transparency mode",
-            "Sweat and water resistant",
-            "Up to 4.5 hours of listening time"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "A002",
-        "product_title": "AirPods Max",
-        "product_image": "https://i.ibb.co.com/wYRV4WD/g-11.webp",
-        "category": "Accessories",
-        "price": 549,
-        "description": "High-fidelity over-ear headphones with immersive sound.",
-        "specification": [
-            "Active Noise Cancellation",
-            "Spatial audio",
-            "Custom-built driver",
-            "Up to 20 hours of battery life"
-        ],
-        "availability": true,
-        "rating": 4.7
-    }
+  {
+    "product_id": "L001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/1ZZL1YR/g-1.jpg",
+    "category": "Laptops",
+    "price": 1099,
+    "description": "High-performance laptop with a stunning InfinityEdge display.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7 processor",
+      "16GB RAM, 512GB SSD storage",
+      "Up to 12 hours of battery life",
+      "Backlit keyboard"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "L002",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/J7Tpzpr/g-2.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "Versatile 2-in-1 laptop with excellent performance and battery life.",
+    "specification": [
+      "13.5-inch 4K OLED display",
+      "Intel Core i7 processor",
+      "16GB RAM, 1TB SSD storage",
+      "360-degree hinge",
+      "Fingerprint reader"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "L003",
+    "product_title": "Asus ZenBook Duo",
+    "product_image": "https://i.ibb.co.com/wsQ71yZ/g-3.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Dual-screen laptop designed for multitasking and productivity.",
+    "specification": [
+      "14-inch FHD display",
+      "Intel Core i7 processor",
+      "16GB RAM, 1TB SSD storage",
+      "ScreenPad Plus secondary display",
+      "Up to 12 hours of battery life"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "L004",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/jT42V5T/g-4.jpg",
+    "category": "Laptops",
+    "price": 1699,
+    "description": "Lightweight business laptop with superior security and performance.",
+    "specification": [
+      "14-inch FHD display",
+      "Intel Core i7 processor",
+      "16GB RAM, 512GB SSD storage",
+      "Fingerprint reader",
+      "MIL-STD 810G durability"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "L005",
+    "product_title": "Microsoft Surface Laptop 5",
+    "product_image": "https://i.ibb.co.com/JtfrGRx/g-5.webp",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "Stylish and powerful laptop with touch support.",
+    "specification": [
+      "13.5-inch PixelSense touchscreen",
+      "Intel Core i7 processor",
+      "16GB RAM, 512GB SSD storage",
+      "Integrated graphics",
+      "Up to 17 hours of battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "L006",
+    "product_title": "Acer Predator Helios 300",
+    "product_image": "https://i.ibb.co.com/tB7CdqC/g-6.webp",
+    "category": "Laptops",
+    "price": 1599,
+    "description": "Powerful gaming laptop with high-end graphics and cooling.",
+    "specification": [
+      "15.6-inch FHD display",
+      "Intel Core i7 processor",
+      "16GB RAM, 512GB SSD storage",
+      "NVIDIA GeForce RTX 3060",
+      "Customizable RGB keyboard"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P001",
+    "product_title": "iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/KxLbt2p/g-7.webp",
+    "category": "iPhone",
+    "price": 1299,
+    "description": "Ultimate smartphone experience with the latest technology.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/0CyK1cD/g-8.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "High-end Android phone with powerful features and performance.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "Quad-camera system",
+      "S-Pen included",
+      "Up to 1TB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "M001",
+    "product_title": "MacBook Air 13-inch",
+    "product_image": "https://i.ibb.co.com/MZf45Lw/g-9.jpg",
+    "category": "MacBook",
+    "price": 999,
+    "description": "Thin, light, and capable laptop for everyday tasks.",
+    "specification": [
+      "13.3-inch Retina display",
+      "Apple M1 chip",
+      "8GB RAM, 256GB SSD storage",
+      "Magic Keyboard",
+      "Up to 18 hours battery life"
+    ],
+    "availability": true,
+    "rating": 5
+  },
+  {
+    "product_id": "M002",
+    "product_title": "MacBook Pro 16-inch",
+    "product_image": "https://i.ibb.co.com/w0C34k0/g-10.jpg",
+    "category": "MacBook",
+    "price": 2499,
+    "description": "High-performance laptop for professionals.",
+    "specification": [
+      "16-inch Liquid Retina XDR display",
+      "Apple M1 Max chip",
+      "32GB RAM, 1TB SSD storage",
+      "Backlit Magic Keyboard",
+      "Up to 21 hours of battery life"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "A001",
+    "product_title": "AirPods Max",
+    "product_image": "https://i.ibb.co.com/jzWKNVV/g-11.jpg",
+    "category": "Accessories",
+    "price": 249,
+    "description": "High-quality wireless earbuds with noise cancellation.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Transparency mode",
+      "Sweat and water resistant",
+      "Up to 4.5 hours of listening time"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "A002",
+    "product_title": "AirPods Pro",
+    "product_image": "https://i.ibb.co.com/wYRV4WD/g-11.webp",
+    "category": "Accessories",
+    "price": 549,
+    "description": "High-fidelity over-ear headphones with immersive sound.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Spatial audio",
+      "Custom-built driver",
+      "Up to 20 hours of battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  }
 ]

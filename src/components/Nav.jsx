@@ -10,7 +10,8 @@ const Nav = () => {
   const location = useLocation();
   const [isHome, setIsHome] = useState(false);
   useEffect(() => {
-    const isHomePath = location.pathname === "/" || location.pathname.startsWith("/category/");
+    const isHomePath =
+      location.pathname === "/" || location.pathname.startsWith("/category/");
     setIsHome(isHomePath);
   }, [location]);
 
@@ -19,7 +20,6 @@ const Nav = () => {
   useEffect(() => {
     setTotalPurchase(getPurchase().length);
     setTotalWish(getWish().length);
-    
   }, [setTotalPurchase, setTotalWish]);
   return (
     <div
@@ -41,6 +41,16 @@ const Nav = () => {
             to="/"
           >
             Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `font-semibold  ${
+                isActive ? ` underline ${isHome ? "" : "text-primary"}` : ""
+              }`
+            }
+            to="/offers"
+          >
+            Offers
           </NavLink>
           <NavLink
             className={({ isActive }) =>
