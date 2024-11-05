@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { WishContext } from "./Root";
+import { WishContext } from "./Context";
 import { getWish, removeWish, addPurchase ,getPurchase} from "./LS";
-import { PurchaseContext } from "./Root";
+import { PurchaseContext } from "./Context";
 import Card from "./Card";
 const Wishlist = () => {
   const data = useLoaderData();

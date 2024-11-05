@@ -11,7 +11,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  Scatter,
 } from "recharts";
 const Statistics = () => {
   const data = useLoaderData();
@@ -30,15 +29,30 @@ const Statistics = () => {
               <XAxis dataKey="product_title" tick={{ fontSize: 12 }} />
               <YAxis tick={{ fontSize: 12 }} />
               <Tooltip />
-              <Legend />
+              <Legend
+                payload={[
+                  {
+                    value: "Price",
+                    type: "square",
+                    id: "ID01",
+                    color: "#8884d8", // Set a custom color for the legend here
+                  },
+                  {
+                    value: "Product",
+                    type: "square",
+                    id: "ID02",
+                    color: "#A6A6A6", // Set a custom color for the legend here
+                  },
+                ]}
+              />
               <Area
-               type="monotone"
+                name="Product"
+                type="monotone"
                 dataKey="price"
                 fill="#efe1fb"
                 stroke="#efe1fb"
               />
               <Bar barSize={30} dataKey="price" fill="#8884d8" />
-              
             </ComposedChart>
           </ResponsiveContainer>
         </div>

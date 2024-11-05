@@ -12,7 +12,7 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Wishlist from "./components/Wishlist";
 import Offers from "./components/Offers";
-import Explore from "./components/Explore";
+
 
 const router = createBrowserRouter([
   {

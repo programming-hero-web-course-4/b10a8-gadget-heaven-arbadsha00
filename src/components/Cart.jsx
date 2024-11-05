@@ -3,7 +3,7 @@ import { ImEqualizer2 } from "react-icons/im";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { getPurchase, removePurchase } from "./LS";
 import Card from "./Card";
-import { PurchaseContext } from "./Root";
+import { PurchaseContext } from "./Context";
 import Modal from "./Modal";
 const Cart = () => {
   const navigate = useNavigate();

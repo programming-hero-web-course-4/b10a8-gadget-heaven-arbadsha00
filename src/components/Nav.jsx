@@ -3,7 +3,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
-import { PurchaseContext, WishContext } from "./Root";
+import { PurchaseContext, WishContext } from "./Context";
 import { getPurchase, getWish } from "./LS";
 
 const Nav = () => {
@@ -76,7 +76,8 @@ const Nav = () => {
         </ul>
         <div className="flex items-center gap-3 ">
           <div className="flex">
-            <button onClick={()=>navigate("/dashboard/cart")}
+            <button
+              onClick={() => navigate("/dashboard/cart")}
               className={` btn btn-circle btn-outline text-xl ${
                 isHome
                   ? "text-white hover:bg-black"
@@ -90,7 +91,8 @@ const Nav = () => {
             )}
           </div>
           <div className="flex">
-            <button onClick={()=>navigate("/dashboard/wishlist")}
+            <button
+              onClick={() => navigate("/dashboard/wishlist")}
               className={`btn btn-circle btn-outline text-xl ${
                 isHome
                   ? "text-white hover:bg-black"
@@ -146,6 +148,16 @@ const Nav = () => {
                 to="/dashboard"
               >
                 Dashboard
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `font-semibold  ${
+                    isActive ? "text-primary underline" : "text-gray-600"
+                  }`
+                }
+                to="/offers"
+              >
+                Offers
               </NavLink>
             </ul>
           </div>

@@ -4,7 +4,7 @@ import ReactStarsRating from "react-awesome-stars-rating";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { addPurchase, addWish, getPurchase, getWish } from "./LS";
-import { PurchaseContext, WishContext } from "./Root";
+import { PurchaseContext, WishContext } from "./Context";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Details = () => {
   const { id } = useParams();
