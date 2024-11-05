@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
 import { PurchaseContext, WishContext } from "./Context";
 import { getPurchase, getWish } from "./LS";
-
+import logo from "../assets/logo.png";
 const Nav = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -24,14 +24,17 @@ const Nav = () => {
   }, [setTotalPurchase, setTotalWish]);
   return (
     <div
-      className={` mt-2 md:mt-4    ${
+      className={`    ${
         isHome
-          ? "bg-primary text-white mx-2 md:mx-4  rounded-t-xl "
-          : "bg-white/30"
+          ? "bg-primary text-white mx-2 mt-2 md:mt-4 md:mx-4  rounded-t-xl "
+          : "bg-white pt-2 md:pt-4"
       }`}
     >
       <nav className="container mx-auto px-4 flex justify-between items-center py-4">
-        <h1 className="text-xl font-bold">Gadget Heaven</h1>
+        <div className="flex items-center gap-2">
+          <img className="w-8" src={logo} alt="" />
+          <h1 className="text-xl font-bold">Gadget Heaven</h1>
+        </div>
         <ul className="hidden md:flex gap-6">
           <NavLink
             className={({ isActive }) =>
@@ -78,13 +81,13 @@ const Nav = () => {
           <div className="flex">
             <button
               onClick={() => navigate("/dashboard/cart")}
-              className={` btn btn-circle btn-outline text-xl ${
+              className={` btn btn-sm md:btn-md btn-circle btn-outline ${
                 isHome
                   ? "text-white hover:bg-black"
                   : "hover:bg-primary  hover:text-white"
               }`}
             >
-              <MdOutlineShoppingCart />
+              <MdOutlineShoppingCart className="text-base md:text-xl"/>
             </button>
             {totalPurchase !== 0 && (
               <span className="indicator-item badge">{totalPurchase}</span>
@@ -93,13 +96,13 @@ const Nav = () => {
           <div className="flex">
             <button
               onClick={() => navigate("/dashboard/wishlist")}
-              className={`btn btn-circle btn-outline text-xl ${
+              className={`btn btn-sm md:btn-md btn-circle btn-outline text-xl ${
                 isHome
                   ? "text-white hover:bg-black"
                   : "hover:bg-primary hover:text-white"
               }`}
             >
-              <FaRegHeart />
+              <FaRegHeart className="text-base md:text-xl"/>
             </button>
             {totalWish !== 0 && (
               <span className="indicator-item badge">{totalWish}</span>

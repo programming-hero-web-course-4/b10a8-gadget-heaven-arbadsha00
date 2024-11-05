@@ -19,10 +19,17 @@ const Statistics = () => {
       <Helmet>
         <title>Statistics | Gadget Heaven</title>
       </Helmet>
-      <div className="my-10 container mx-auto px-4">
-        <h1 className="text-2xl font-semibold">Statistics</h1>
+      <div className="">
+        <div className=" bg-primary mx-auto py-6 space-y-4 text-center">
+          <h1 className="text-3xl font-bold text-white r">Statistics</h1>
+          <p className="text-white w-4/5 md:w-3/5  mx-auto">
+            Compare latest gadgets that will take your experience to the next
+            level. From smart devices to the coolest accessories, we have it
+            all!
+          </p>
+        </div>
 
-        <div className="rounded-xl bg-white mx-auto my-6 py-4">
+        <div className="rounded-xl bg-white container px-4 mx-auto my-6 py-4">
           <ResponsiveContainer width="100%" height={400}>
             <ComposedChart width="100%" height={300} data={data} margin={{}}>
               <CartesianGrid strokeDasharray="3 3" />

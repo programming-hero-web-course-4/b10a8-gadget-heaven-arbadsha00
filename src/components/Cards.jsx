@@ -20,7 +20,7 @@ const Cards = () => {
       {categoryData.length ? (
         categoryData.map((item) => (
           <div
-            className="bg-white text-center  p-4 space-y-3 rounded-xl"
+            className="bg-white text-center  p-4 space-y-3 rounded-xl flex flex-col justify-between"
             key={item.product_id}
           >
             <img
@@ -30,7 +30,7 @@ const Cards = () => {
             />
             <h3 className="font-bold text-xl  ">{item.product_title}</h3>
             <p>Price : ${item.price}</p>
-            <button onClick={()=>navigate(`/details/${item.product_id}`)} className="btn rounded-full text-primary border-primary bg-white hover:text-white hover:bg-primary">
+            <button onClick={()=>navigate(`/details/${item.product_id}`)} className="btn mx-auto rounded-xl text-primary border-primary bg-white hover:text-white hover:bg-primary">
               View Details
             </button>
           </div>

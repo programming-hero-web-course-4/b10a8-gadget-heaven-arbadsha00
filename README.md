@@ -60,7 +60,7 @@ GadgetHaven is a responsive e-commerce platform designed to sell gadgets like sm
    - A "Sort by Price" button is available on the Cart page, which sorts cart items in descending order by price.
 
 4. **Category Filtering**:
-   - On the Home page, there is a sidebar with different categories like Mackbooks, Phones, Smart Watches, Iphone, and Accessories.
+   - On the Home page, there is a sidebar with different categories like MacBooks, Phones, Smart Watches, Iphone, and Accessories.
    - Clicking a category filters the products displayed to show only the items in that category.
 
 5. **Statistics Page**:
@@ -70,7 +70,7 @@ GadgetHaven is a responsive e-commerce platform designed to sell gadgets like sm
 ## Pages & Routes
 
 - **Home Page**:
-  - A banner section with a button linking to the Product Category.
+  - A banner section with a button linking to the Dashboard Page.
   - A sidebar for product categories.
   - A grid of gadget cards, each with product details and a link to the product's detail page.
   
@@ -87,7 +87,7 @@ GadgetHaven is a responsive e-commerce platform designed to sell gadgets like sm
 
 - **Offers Page**:
   - Displays various offers on ongoing products.
-## Usage Instructions
+
 
 # React + Vite
 
