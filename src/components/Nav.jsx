@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { PurchaseContext, WishContext } from "./Root";
 import { getPurchase, getWish } from "./LS";
 
 const Nav = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [isHome, setIsHome] = useState(false);
   useEffect(() => {
@@ -75,7 +76,7 @@ const Nav = () => {
         </ul>
         <div className="flex items-center gap-3 ">
           <div className="flex">
-            <button
+            <button onClick={()=>navigate("/dashboard/cart")}
               className={` btn btn-circle btn-outline text-xl ${
                 isHome
                   ? "text-white hover:bg-black"
@@ -89,7 +90,7 @@ const Nav = () => {
             )}
           </div>
           <div className="flex">
-            <button
+            <button onClick={()=>navigate("/dashboard/wishlist")}
               className={`btn btn-circle btn-outline text-xl ${
                 isHome
                   ? "text-white hover:bg-black"

@@ -1,5 +1,10 @@
+
 import banner from "../assets/banner.jpg";
 const Banner = () => {
+ 
+  const scrollToCategory = () => {
+    document.getElementById("category")?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="bg-primary rounded-b-xl mx-2 md:mx-4 mb-48 md:mb-60 lg:mb-96">
       <div className="container mx-auto relative">
@@ -12,7 +17,7 @@ const Banner = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="btn  text-xl font-bold rounded-full text-primary bg-white px-6">
+          <button onClick={scrollToCategory} className="btn  text-xl font-bold rounded-full text-primary bg-white px-6">
             Shop Now
           </button>
               </div>

@@ -17,7 +17,7 @@ const Home = () => {
           <div>
             <Explore></Explore>
           </div>
-          <div className="lg:col-span-3">
+          <div id="category" className="lg:col-span-3">
             <Outlet></Outlet>
           </div>
         </section>
