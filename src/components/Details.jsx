@@ -30,7 +30,7 @@ const Details = () => {
     setTotalPurchase(getPurchase().length);
   }
   useEffect(() => {
-    setClicked(getPurchase().includes(product_id));
+    setClicked(getWish().includes(product_id));
   }, [product_id]);
   function handleWish() {
     addWish(product_id);

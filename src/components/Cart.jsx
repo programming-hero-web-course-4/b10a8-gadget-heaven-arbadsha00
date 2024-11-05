@@ -44,10 +44,10 @@ const Cart = () => {
   }
   function handlePurchase() {
     setFilterData([]);
-    localStorage.clear("purchase-list");
+    localStorage.removeItem("purchase-list");
     setTotalPurchase(0);
     navigate("/");
-}
+  }
   return (
     <div className="container mx-auto px-4 my-6">
       <div className="flex flex-col md:flex-row justify-between items-center">
@@ -61,7 +61,8 @@ const Cart = () => {
             >
               Sort by Price <ImEqualizer2 />
             </button>
-            <button disabled={!filterData.length}
+            <button
+              disabled={!filterData.length}
               onClick={() => document.getElementById("my_modal_1").showModal()}
               className="btn text-lg text-white bg-gradient-to-b from-primary via-purple-500 to-[#e463e4] rounded-full hover:text-primary hover:bg-white"
             >
@@ -80,7 +81,7 @@ const Cart = () => {
           ></Card>
         ))}
       </div>
-      <Modal  handlePurchase={handlePurchase} total={total}></Modal>
+      <Modal handlePurchase={handlePurchase} total={total}></Modal>
     </div>
   );
 };
