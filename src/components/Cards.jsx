@@ -4,9 +4,7 @@ import errorImg from "../assets/erreo.png";
 const Cards = () => {
   const { category } = useParams();
   const navigate = useNavigate();
-  function handleRemove() {
-  
-}
+
   const data = useLoaderData();
   const [categoryData, setCategoryData] = useState([]);
   useEffect(() => {
@@ -39,7 +37,7 @@ const Cards = () => {
         ))
       ) : (
         <div className="lg:col-span-3">
-          <img src={errorImg} alt="" />
+          <img className=" md:h-[400px] object-cover w-full" src={errorImg} alt="" />
         </div>
       )}
     </div>

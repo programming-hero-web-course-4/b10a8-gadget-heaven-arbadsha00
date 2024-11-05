@@ -10,7 +10,8 @@ const Nav = () => {
   const location = useLocation();
   const [isHome, setIsHome] = useState(false);
   useEffect(() => {
-    setIsHome(location.pathname === "/");
+    const isHomePath = location.pathname === "/" || location.pathname.startsWith("/category/");
+    setIsHome(isHomePath);
   }, [location]);
 
   const { totalWish, setTotalWish } = useContext(WishContext);

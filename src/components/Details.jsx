@@ -5,6 +5,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { addPurchase, addWish, getPurchase, getWish } from "./LS";
 import { PurchaseContext, WishContext } from "./Root";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Details = () => {
   const { id } = useParams();
   const data = useLoaderData();
@@ -38,7 +39,12 @@ const Details = () => {
     setClicked(true);
   }
   return (
-    <div className="bg-primary mb-[500px] md:mb-96">
+    <HelmetProvider>
+      <Helmet>
+        <title>Product details</title>
+       
+      </Helmet>
+      <div className="bg-primary mb-[500px] md:mb-96">
       <div className="container mx-auto relative ">
         <div className="text-center space-y-3 pt-10 pb-[400px]  md:pb-80 ">
           <h1 className="text-3xl font-bold  text-white">Product Details</h1>
@@ -105,6 +111,8 @@ const Details = () => {
         </div>
       </div>
     </div>
+    </HelmetProvider>
+    
   );
 };
 

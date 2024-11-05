@@ -1,9 +1,14 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
-
+import { Helmet, HelmetProvider } from "react-helmet-async";
 const Dashboard = () => {
   return (
-    <div className="">
+    <HelmetProvider>
+      <Helmet>
+        <title>Gadget Heaven | Dashboard</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
+      <div className="">
       <div className=" bg-primary mx-auto py-6 space-y-4 text-center">
         <h1 className="text-3xl font-bold text-white r">Dashboard</h1>
         <p className="text-white w-4/5 md:w-3/5  mx-auto">
@@ -35,6 +40,8 @@ const Dashboard = () => {
           </div>
           <Outlet></Outlet>
     </div>
+    </HelmetProvider>
+    
   );
 };
 
